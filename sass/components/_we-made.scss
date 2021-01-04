@@ -1,0 +1,47 @@
+.we_made-title, .our_team-tilte, .constant-clients{
+    font-family: $roboto-font;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.167;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: $titles-color;
+    }
+    
+    .we-made-foto{
+        display: block;
+    }
+    
+    .we-made-item{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    padding-top: 27px;
+    padding-bottom: 27px;
+    background: rgba(47, 48, 58, 0.8);
+    width: 370px;
+    transform: translateY(-100%);
+    
+    font-family: $roboto-font;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.143;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    
+    color: #FFFFFF;
+    }
+    .we_made{
+        padding-bottom: 94px;
+    }
+    .we_made_job-list{
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 50px;
+    }
+    .we_made_job-list:not(:last-child){
+        margin-right: 30px;
+    }
