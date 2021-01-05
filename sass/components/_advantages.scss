@@ -1,35 +1,38 @@
 .advantages-section{   
     padding-top: 94px;
     padding-bottom: 94px;
+}  
+.advantages:not(:last-child){
+    margin-bottom: 30px;
     
- &-list{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
 }
-}
+
 .advantages{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 
 &-icon-container{
 
-    display: block;
     padding-top: 25px;
     padding-bottom: 25px;
-    padding-left: 100px;
-    padding-right: 100px;
+    padding-left: 190px;
+    padding-right: 190px;
     background-color: #F5F4FA;
     border-radius: 4px;
+    
 
     &-icon{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
         width: 70px;
         height: 70px;
+        
     }
  }
 &-title{
-    
+    text-align: center;
     font-family: $roboto-font;
     font-style: normal;
     font-weight: bold;
@@ -41,19 +44,74 @@
     margin-top: 30px;
 }
 &-discription{
-font-family: $roboto-font;
-font-style: normal;
-font-weight: normal;
-font-size: 14px;
-line-height: 1.714;
-/* or 171% */
-letter-spacing: 0.03em;
-color: $items-color;
-max-width: 270px;
-margin-top: 10px;
+    
+    font-family: $roboto-font;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 1.714;
+    /* or 171% */
+    letter-spacing: 0.03em;
+    color: $items-color;
+    margin-top: 10px;
 }
 }
+@media screen and (min-width:$mobile){
+    .advantages{
+        width:$mobile;
+    }
+}
+@media screen and (min-width:$tablet){
+    .advantages-section-list{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
 
+    }
+    .advantages{
+        margin: 0;
+        width: 354px;
+    }
+    .advantages-item{
+        margin: 0;
+    }
+    
+    .advantages-icon-container{
+        padding-left: 142px;
+        padding-right: 142px;
+        max-width: 354px;
+    }
+    .container{
+        width:768px;
+    }
+    .advantages-item:nth-child(2n+1){
+        margin-right: 30px;
+    }   
+}
+@media screen and (min-width:$desktop){
+    .advantages-section-list{
+        display: flex;
+        justify-content: space-between;
+    }
+    .advantages-item{
+        margin: 0;
+    }
+    .advantages{
+        width: 270px;
+    }
+    .container{
+        width: 1200px;
+    }
+    .advantages-icon-container{
+        padding-left: 100px;
+        padding-right: 100px;
+        margin: 0;
+        width: 270px;
+    }
+    .advantages-icon-container-icon{
+        margin: 0;
+    }
+}
 
 
 
