@@ -13,30 +13,20 @@
 <body>
     <header class="header">
         <div class="container">
-                <nav class="nav">
-                    <div class="container-nav">
-                        <a class="container-nav-logo animate__bounce" lang="en" href="#">
+                 <nav class="nav">
+                    <a class="container-nav-logo animate__bounce" lang="en" href="#">
                         <span class="logo-first">Web</span><span class="logo-second">Studio</span>
-                        </a>
-                        <ul class="container-nav-nav-list">
-                            <li class="nav-list"><a class="nav-list-studio current-studio" href="index.html">Студия</a></li>
-                            <li class="nav-list"><a class="nav-list-portfolio" href="portfolio.html">Портфолио</a></li>
-                            <li class="nav-list"><a class="nav-list-contacts" href="">Контакты</a></li>                               
-                        </ul>
-                    </div>
-                </nav>
-                <ul class="container-contacts">
-                    <li class="contacts-envelope contacts">
-                         
-                        <a class="mail" href="mailto:info@devstudio.com"><svg class="icon-envelope">
-                            <use  href="./symbol-defs.svg#icon-envelope"></use></svg>info@devstudio.com</a>
-                    </li>
-                    <li class="contacts-smartphone contacts">
-                        
-                        <a class="tel " href="tel:+380961111111"><svg class="icon-smartphone">
-                            <use  href="./symbol-defs.svg#icon-smartphone-1"></use></svg>+38 096 111 11 11</a>
-                    </li>
-                </ul>                  
+                    </a>
+                    <button type="button" class="close-menu-btn is-open" data-menu-button>
+                        <svg class="close-menu-icon" aria-label="Переключатель мобильного меню">
+                            <use  class="close-btn-icon"  href="./symbol-defs.svg#icon-close_40px-1"></use>
+                            <use class="menu-btn-icon"  href="./symbol-defs.svg#icon-menu_40px-1"></use>
+                        </svg>
+                    </button>
+                    <div class="additional-menu">
+
+                    </div>   
+                </nav>                      
         </div>                    
     </header>
     <main>
@@ -76,12 +66,10 @@
         <!--Чем мы занимаемся-->
         <section class="we_made container">  
                 <h2 class="we_made-title">Чем мы занимаемся</h2>
-                <ul>
-                    <div class="we_made_job-list">
-                        <li><img class="we-made-foto" src="Images/img.jpg" alt="Ноутбук на столе." width="370" height="290"><p class="we-made-item">Десктопные приложения</p></li>
-                        <li><img class="we-made-foto" src="Images/img(1).jpg" alt="Телефон." width="370" height="290"><p class="we-made-item">Мобильные приложения</p></li>
-                        <li><img class="we-made-foto" src="Images/img(2).jpg" alt="Планшет." width="370" height="290"><p class="we-made-item">Дизайнерские решения</p></li>
-                    </div>
+                <ul class="we_made_job-list">
+                    <li><img class="we-made-foto" src="Images/img.jpg" alt="Ноутбук на столе." width="370" height="290"><p class="we-made-item">Десктопные приложения</p></li>
+                    <li><img class="we-made-foto" src="Images/img(1).jpg" alt="Телефон." width="370" height="290"><p class="we-made-item">Мобильные приложения</p></li>
+                    <li><img class="we-made-foto" src="Images/img(2).jpg" alt="Планшет." width="370" height="290"><p class="we-made-item">Дизайнерские решения</p></li>
                 </ul>
         </section>
         <!-- Наша команда -->
@@ -206,7 +194,7 @@
         </div>    
     </footer>  
 
-    <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop is-hidden" data-menu-button>
         <div class="modal">
             <button class="modal-btn-close" type="button" data-modal-close>
                 <svg class="modal-close-icon">
@@ -254,5 +242,6 @@
         </div>
     </div>
     <script src="./JS/modal.js"></script>
+    <script src="./JS/mobilemenu.js"></script>
 </body>
 </html>

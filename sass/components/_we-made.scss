@@ -35,6 +35,9 @@
     }
     .we_made{
         padding-bottom: 94px;
+        @media screen and (max-width:1199px){
+            display: none;  
+        }
     }
     .we_made_job-list{
         position: relative;
@@ -45,3 +48,4 @@
     .we_made_job-list:not(:last-child){
         margin-right: 30px;
     }
+    
