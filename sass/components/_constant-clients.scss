@@ -1,8 +1,8 @@
 
 .constant-clients{
     display: block;
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding-top: 60px;
+    padding-bottom: 60px;
     
     &-title{
         font-family:$roboto-font;
@@ -22,7 +22,7 @@
         flex-wrap: wrap;
         list-style-type: none;
         width: 100%;
-        margin: -15px;
+        
         
         
     }
@@ -111,5 +111,12 @@
     }
     .const-item:last-child{
         margin-right: 0;
+    }
+    .constant-clients{
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
+    .constant-clients-title{
+        margin-bottom: 50px;
     }
 }

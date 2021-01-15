@@ -11,38 +11,38 @@
 <body class="portfolio-body">
     <header class="header header-portfolio">
         <div class="container">
-            <nav class="nav">
-               <a class="container-nav-logo animate__bounce" lang="en" href="#">
-                   <span class="logo-first">Web</span><span class="logo-second">Studio</span>
-               </a>
-               <button type="button" class="close-menu-btn is-open" data-menu-button>
-                   <svg class="close-menu-icon" aria-label="Переключатель мобильного меню">
-                       <use  class="close-btn-icon"  href="./symbol-defs.svg#icon-close_40px-1"></use>
-                       <use class="menu-btn-icon"  href="./symbol-defs.svg#icon-menu_40px-1"></use>
-                   </svg>
-               </button>
-               <div class="additional-menu">
-                   <ul class="container-nav-nav-list">
-                       <li class="nav-list"><a class="nav-list-studio" href="index.html">Студия</a></li>
-                       <li class="nav-list"><a class="nav-list-portfolio current-portfolio" href="portfolio.html">Портфолио</a></li>
-                       <li class="nav-list"><a class="nav-list-contacts" href="">Контакты</a></li>                               
-                   </ul>
-                   <ul class="container-contacts">
-                       <li class="contacts-envelope contacts">
-                            
-                           <a class="mail" href="mailto:info@devstudio.com"><svg class="icon-envelope">
-                               <use  href="./symbol-defs.svg#icon-envelope"></use></svg>info@devstudio.com</a>
-                       </li>
-                       <li class="contacts-smartphone contacts">
-                           
-                           <a class="tel " href="tel:+380961111111"><svg class="icon-smartphone">
-                               <use  href="./symbol-defs.svg#icon-smartphone-1"></use></svg>+38 096 111 11 11</a>
-                       </li>
-                   </ul> 
-               </div>   
-           </nav>                      
-   </div>                
-        </header>
+                 <nav class="nav">
+                    <a class="container-nav-logo head-logo animate__bounce" lang="en" href="#">
+                        <span class="logo-first">Web</span><span class="logo-second">Studio</span>
+                    </a>
+                    <button type="button" class="close-menu-btn is-open" data-menu-button>
+                        <svg class="close-menu-icon" aria-label="Переключатель мобильного меню">
+                            <use  class="close-btn-icon"  href="./symbol-defs.svg#icon-close_40px-1"></use>
+                            <use class="menu-btn-icon"  href="./symbol-defs.svg#icon-menu_40px-1"></use>
+                        </svg>
+                    </button>
+                    <div class="additional-menu is-open" data-menu>
+                        <ul class="container-nav-nav-list">
+                            <li class="nav-list"><a class="nav-list-studio" href="index.html">Студия</a></li>
+                            <li class="nav-list"><a class="nav-list-portfolio current-portfolio" href="portfolio.html">Портфолио</a></li>
+                            <li class="nav-list"><a class="nav-list-contacts" href="">Контакты</a></li>                               
+                        </ul>
+                        <ul class="container-contacts">
+                            <li class="contacts-envelope contacts">
+                                 
+                                <a class="mail" href="mailto:info@devstudio.com"><svg class="icon-envelope">
+                                    <use  href="./symbol-defs.svg#icon-envelope"></use></svg>info@devstudio.com</a>
+                            </li>
+                            <li class="contacts-smartphone contacts">
+                                
+                                <a class="tel " href="tel:+380961111111"><svg class="icon-smartphone">
+                                    <use  href="./symbol-defs.svg#icon-smartphone-1"></use></svg>+38 096 111 11 11</a>
+                            </li>
+                        </ul> 
+                    </div>   
+                </nav>                      
+        </div>                    
+    </header>
     <main>
         
             <section class="btn-list container">
@@ -169,7 +169,7 @@
             <div class="footer-content">
                 <div class="container-adress">
                     <div class="container-logo">
-                        <a class="container-nav-logo" lang="en" href="#"> 
+                        <a class="container-nav-logo foot-logo" lang="en" href="#"> 
                             <span class="logo-first">Web</span><span class="logo-foot">Studio</span></a> 
                     </div>
                     <address class="adress">
@@ -177,7 +177,7 @@
                             <p class="adress-sity">г. Киев, пр-т Леси Украинки, 26</p>
                             <ul class="contacts">
                                 <li><a class="mail mail-footer" href="mailto:info@example.com">info@example.com</a></li>
-                                <li><a class="tel" href="tel:+380991111111">+38 099 111 11 11</a></li>
+                                <li><a class="tel tel-footer" href="tel:+380991111111">+38 099 111 11 11</a></li>
                             </ul>
                         </div>
                     </address>
@@ -208,6 +208,8 @@
                     </form>   
             </div>   
         </div>    
-    </footer>     
+    </footer>  
+    <script src="./JS/modal.js"></script>
+    <script src="./JS/mobilemenu.js"></script>   
 </body>
 </html>

@@ -1,9 +1,13 @@
 
 .footer{
     background-color: #2F303A;
-    padding-top: 60px;
-    padding-bottom: 60px;
+    padding: 60px 0;
+    
        
+}
+.container{
+    padding-left:  15px;
+    padding-right: 15px;
 }
 .join{
 font-family: Roboto;
@@ -15,10 +19,13 @@ letter-spacing: 0.03em;
 text-transform: uppercase;
 color: #FFFFFF;
 margin-bottom: 20px;
+display: flex;
+justify-content: center;
 }
 .footer-all{
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
 }
 .footer-form-title{
     font-family: $roboto-font;
@@ -30,20 +37,23 @@ letter-spacing: 0.03em;
 text-transform: uppercase;
 margin-bottom: 20px;
 color: #FFFFFF;
+display: flex;
+justify-content: center;
 }
+
 .form-shape{
     position: relative;
+    margin: 0;
     display: flex;
+    flex-direction: column;
     align-items: center;
+   
 }
-.footer-form{
-    margin-left: 70px;
-    padding-top: 15px;
-}
-.footer-content{
+
+/*.footer-content{
     display: flex;
     align-items: flex-start;
-}
+}*/
 .footer-btn-title{
     font-family: $roboto-font;
 font-style: normal;
@@ -57,20 +67,24 @@ color:#FFFFFF;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     display: flex;
-    margin-left: 12px;
+    flex-direction: row;
     padding: 10px 29px;  
+    justify-content: center;
+    
 
 }
+
 .footer-input-mail{
     border: 1px solid rgba(255, 255, 255, 0.3);
     box-sizing: border-box;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
-    width: 358px;
+    width: 450px;
     height: 50px;
     background-color: #2F303A;
     padding-left: 75px;
     color:#ffffff;
+    margin-bottom: 20px;
 }
 .footer-form-name{
     font-family: $roboto-font;
@@ -81,7 +95,7 @@ line-height: 1.25;
 color: rgba(255, 255, 255, 0.6);
 position: absolute;
 top:50%;
-transform: translateY(-50%);
+transform: translateY(-230%);
 left: 16px;
 
 }
@@ -102,16 +116,21 @@ left: 16px;
 
 .container-logo{
 margin-bottom: 20px;
+display: flex;
+justify-content: center;
 }
-.container-address{
-    text-align: left;
+.contacts{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-.container-join{
-    margin-left: 70px;
-    padding-top: 15px;
-}
+
 .container-join .container-social-list{
     padding-left: 0;
+}
+.container-social-list{
+    padding:0;
+    margin-bottom: 60px;
 }
 .adress-sity{
 font-family: $roboto-font;
@@ -121,10 +140,87 @@ font-size: 14px;
 line-height: 24px1.714;
 letter-spacing: 0.03em;
 color: #FFFFFF;
-margin-bottom: 9px;
+margin-bottom: 8px;
+display: flex;
+justify-content: center;
 }
 
 .mail-footer{
     display: block;
-    margin-bottom: 9px;
+    margin-bottom: 8px;
+}
+.tel-footer{
+    margin-bottom: 60px;
+}
+@media screen and (min-width:$tablet){
+    .footer-content{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        
+    }
+    .container{
+        width: $tablet;
+    }
+    .container-adress{
+        margin-right: 158px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .join{
+        margin-top: 5px;
+    }
+    .foot-logo{
+        margin-right: 158px;
+    }
+    .mail-footer{
+        margin-right: 0;
+    }
+}
+@media screen and (min-width:$desktop){
+    .container{
+        width: $desktop;
+    }
+    .footer-all{
+        flex-direction: row;
+    }
+    .container-adress{
+        justify-content: start;
+        margin-right: 0;
+    }
+    .container-adress{
+        align-items: flex-start;
+        margin-right: 70px;
+        width: 231px;
+    }
+    .join{
+        margin-top: 12px;
+        justify-content: flex-start;
+    }
+    .container-join{
+        margin-right: 93px;
+    }
+    .footer-form-title{
+        justify-content: flex-start;
+        
+    }
+    .footer-input-mail{
+        width: 358px;
+        margin-right: 12px;
+        margin-bottom: 0;
+    }
+    .form-shape{
+        flex-direction: row;
+        align-items: center;
+    }
+    .footer-form-name{
+        transform: translateY(-60%);
+    }
+    .tel-footer{
+        margin: 0;
+    }
+    .container-social-list{
+        margin-bottom: 0;
+    }
 }
