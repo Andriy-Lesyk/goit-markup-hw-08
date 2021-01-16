@@ -1,6 +1,6 @@
 .advantages-section{   
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding-top: 60px;
+    padding-bottom: 60px;
 }  
 .advantages:not(:last-child){
     margin-bottom: 30px;
@@ -81,9 +81,7 @@
         padding-right: 142px;
         max-width: 354px;
     }
-    .container{
-        width:768px;
-    }
+    
     .advantages-item:nth-child(2n+1){
         margin-right: 30px;
     }   
@@ -99,9 +97,7 @@
     .advantages{
         width: 270px;
     }
-    .container{
-        width: 1200px;
-    }
+    
     .advantages-icon-container{
         padding-left: 100px;
         padding-right: 100px;

@@ -48,6 +48,7 @@ color: #000000;
 }
 
 .header{
+    
     padding-bottom: 25px;
     padding-top: 24px;
     
@@ -114,11 +115,7 @@ ul{
 .nav-list:not(:last-child){
     margin-bottom: 40px;
 }
-.container{
-    width: $mobile;
-    padding: 0 15px;
-    margin: 0 auto;   
-}
+
 .mail, .tel{
 font-family: Roboto;
 font-style: normal;
@@ -231,10 +228,7 @@ align-items: center;
         margin: 0;
         padding: 0;
     }
-    .container{
-        width: 768px;
-        padding: 0 15px;
-    }
+    
     .nav-list:not(:last-child){
         margin: 0;
         margin-right: 50px;    
@@ -294,9 +288,7 @@ align-items: center;
         flex-direction: row;
         align-items: center;
     }
-    .container{
-        width:1200px;
-    }
+    
     .mail{
         margin:0;
         margin-right: 30px;

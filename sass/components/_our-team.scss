@@ -4,6 +4,24 @@
 .position{
     margin-top: 10px;
 }
+.container{
+    width:100%;
+    padding: 0 15px;
+       
+}
+.our_team-title{
+font-family: Roboto;
+font-style: normal;
+font-weight: bold;
+font-size: 28px;
+line-height: 1.18;
+/* identical to box height */
+
+text-align: center;
+letter-spacing: 0.03em;
+
+color: #212121;
+}
 
 .our_team-item-title{
     font-family: $roboto-font;
