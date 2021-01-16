@@ -1,4 +1,4 @@
-.advantages-section{   
+.advantages-section-list{   
     padding-top: 60px;
     padding-bottom: 60px;
 }  
@@ -90,6 +90,7 @@
     .advantages-section-list{
         display: flex;
         justify-content: space-between;
+        padding: 94px 0;
     }
     .advantages-item{
         margin: 0;
