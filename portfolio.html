@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title lang="en">WebStudio</title>
-    <link <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css" integrity="sha512-ISS7cAi1PEhQ8jnbJpJZMd29NlhNj4AWYyLOSp2CE/CsHxTCu+r+t0D2yoJudVrd0/8fTVPUVDzY5Tvli75u/g==" crossorigin="anonymous" />
     <link rel="stylesheet" href="./css/portfolio.min.css">
 </head>
@@ -45,28 +45,45 @@
     </header>
     <main>
         
-            <section class="btn-list container">
+            <section class="btn-section container">
                 <ul class="btn-list">
-                    <div class="container-btn-list">
-                        <li class="btn-sheet"><button class="btn-item btn-first" type="button">Все</button></li>
-                        <li class="btn-sheet"><button class="btn-item btn-second" type="button">Веб-сайты</button></li>
-                        <li class="btn-sheet"><button class="btn-item btn-third" type="button">Приложения</button></li>
-                        <li class="btn-sheet"><button class="btn-item btn-fourth" type="button">Дизайн</button></li>
-                        <li class="btn-sheet"><button class="btn-item btn-fifth" type="button">Маркетинг</button></li>
-                    </div>
+                    <li class="btn-sheet"><button class="btn-item btn-first" type="button">Все</button></li>
+                    <li class="btn-sheet"><button class="btn-item btn-second" type="button">Веб-сайты</button></li>
+                    <li class="btn-sheet"><button class="btn-item btn-third" type="button">Приложения</button></li>
+                    <li class="btn-sheet"><button class="btn-item btn-fourth" type="button">Дизайн</button></li>
+                    <li class="btn-sheet"><button class="btn-item btn-fifth" type="button">Маркетинг</button></li>
                 </ul>
             </section>
             <section class="examples">
-                <ul class="examples-list">
-                    <div class="container-examples-list container">
-                        
+                <ul class="examples-list container">
                             <li class="examples-item">
                                 <a class="examples-link" href="#">
                                     <div class="item-one">
-                                        <div class="examples-foto">
-                                            <img class="examples-item-picture" src="Images/portfolio/img.png" alt="Ноутбук с примером работы" width="370" height="290">
-                                            <div class="examples-text"><p>Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p></div>
-                                        </div>
+                                            <div class="examples-foto">
+                                                <picture class="examples-picture">
+                                                    <source
+                                                        srcset="./Images/portfolio/desk-webp/img1.webp 1x, ./Images/portfolio/desk-webp/img11.webp 2x"
+                                                        media="(min-width:1200px)" type="image/webp">
+                                                    <source
+                                                        srcset="./Images/portfolio/desk-jpg/img1.jpg 1x, ./Images/portfolio/desk-jpg/img11.jpg 2x"
+                                                        media="(min-width:1200px)">
+                                                    <source
+                                                        srcset="./Images/portfolio/tab-webp/img1.webp 1x, ./Images/portfolio/tab-webp/img11.webp 2x"
+                                                        media="(min-width:768px)" type="image/webp">
+                                                    <source
+                                                        srcset="./Images/portfolio/tab-jpg/img1.jpg 1x, ./Images/portfolio/tab-jpg/img11.jpg 2x"
+                                                        media="(min-width:768px)">
+                                                    <source
+                                                        srcset="./Images/portfolio/mob-webp/img1.webp 1x, ./Images/portfolio/mob-webp/img11.webp 2x"
+                                                        media="(min-width:320px)" type="image/webp">
+                                                    <source
+                                                        srcset="./Images/portfolio/mob-jpg/img1.jpg 1x, ./Images/portfolio/mob-jpg/img11.jpg 2x"
+                                                        media="(min-width:320px)">
+                                                    <img class="examples-item-picture" src="Images/portfolio/img.png" alt="Ноутбук с примером работы" >
+                                                </picture>    
+                                                    <div class="examples-text"><p>Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p></div>
+                                            
+                                            </div>
                                         <div class="card"><h2 class="examples-title">Технокряк</h2><p class="example-description">Веб-сайт</p></div>
                                     </div>
                                 </a>
@@ -75,7 +92,28 @@
                                 <a class="examples-link" href="#">
                                     <div class="item-one">
                                         <div class="examples-foto">
-                                            <img class="examples-item-picture" src="Images/portfolio/img-1.png" alt="Ноутбук с примером работы" width="370" height="290">
+                                            <picture class="examples-picture">
+                                                <source
+                                                    srcset="./Images/portfolio/desk-webp/img2.webp 1x, ./Images/portfolio/desk-webp/img21.webp 2x"
+                                                    media="(min-width:1200px)" type="image/webp">
+                                                <source
+                                                    srcset="./Images/portfolio/desk-jpg/img2.jpg 1x, ./Images/portfolio/desk-jpg/img21.jpg 2x"
+                                                    media="(min-width:1200px)">
+                                                <source
+                                                    srcset="./Images/portfolio/tab-webp/img2.webp 1x, ./Images/portfolio/tab-webp/img21.webp 2x"
+                                                    media="(min-width:768px)" type="image/webp">
+                                                <source
+                                                    srcset="./Images/portfolio/tab-jpg/img2.jpg 1x, ./Images/portfolio/tab-jpg/img21.jpg 2x"
+                                                    media="(min-width:768px)">
+                                                <source
+                                                    srcset="./Images/portfolio/mob-webp/img2.webp 1x, ./Images/portfolio/mob-webp/img21.webp 2x"
+                                                    media="(min-width:320px)" type="image/webp">
+                                                <source
+                                                    srcset="./Images/portfolio/mob-jpg/img2.jpg 1x, ./Images/portfolio/mob-jpg/img21.jpg 2x"
+                                                    media="(min-width:320px)">
+                                                    <img class="examples-item-picture" src="Images/portfolio/img-1.png" alt="Ноутбук с примером работы">
+                                            </picture> 
+                                            
                                             <div class="examples-text"><p>Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p></div>
                                         </div>
                                         <div class="card"><h2 class="examples-title">Постер <span lang="en"> New Orlean vs Golden Star</span></h2><p class="example-description">Дизайн</p></div>
@@ -86,10 +124,31 @@
                                 <a class="examples-link" href="#">
                                     <div class="item-one">
                                         <div class="examples-foto">
-                                            <img class="examples-item-picture" src="Images/portfolio/img-2.png" alt="Ноутбук с примером работы" width="370" height="290">
+                                            <picture class="examples-picture">
+                                                <source
+                                                    srcset="./Images/portfolio/desk-webp/img3.webp 1x, ./Images/portfolio/desk-webp/img31.webp 2x"
+                                                    media="(min-width:1200px)" type="image/webp">
+                                                <source
+                                                    srcset="./Images/portfolio/desk-jpg/img3.jpg 1x, ./Images/portfolio/desk-jpg/img31.jpg 2x"
+                                                    media="(min-width:1200px)">
+                                                <source
+                                                    srcset="./Images/portfolio/tab-webp/img3.webp 1x, ./Images/portfolio/tab-webp/img31.webp 2x"
+                                                    media="(min-width:768px)" type="image/webp">
+                                                <source
+                                                    srcset="./Images/portfolio/tab-jpg/img3.jpg 1x, ./Images/portfolio/tab-jpg/img31.jpg 2x"
+                                                    media="(min-width:768px)">
+                                                <source
+                                                    srcset="./Images/portfolio/mob-webp/img3.webp 1x, ./Images/portfolio/mob-webp/img31.webp 2x"
+                                                    media="(min-width:320px)" type="image/webp">
+                                                <source
+                                                    srcset="./Images/portfolio/mob-jpg/img3.jpg 1x, ./Images/portfolio/mob-jpg/img31.jpg 2x"
+                                                    media="(min-width:320px)">
+                                                    <img class="examples-item-picture" src="Images/portfolio/img-2.png" alt="Ноутбук с примером работы">
+                                            </picture> 
+                                            
                                             <div class="examples-text"><p>Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p></div>
                                         </div>
-                                        <div class="card"><h2 class="examples-title">Ресторан <span lang="en">Seafood</span></h2><p class="example-description">Приложение</p></div
+                                        <div class="card"><h2 class="examples-title">Ресторан <span lang="en">Seafood</span></h2><p class="example-description">Приложение</p></div>
                                     </div>
                                 </a>
                             </li>
@@ -97,7 +156,28 @@
                                 <a class="examples-link" href="#">
                                     <div class="item-one">
                                         <div class="examples-foto">
-                                            <img class="examples-item-picture" src="Images/portfolio/img-3.png" alt="Ноутбук с примером работы" width="370" height="290">
+                                            <picture class="examples-picture">
+                                                <source
+                                                    srcset="./Images/portfolio/desk-webp/img4.webp 1x, ./Images/portfolio/desk-webp/img41.webp 2x"
+                                                    media="(min-width:1200px)" type="image/webp">
+                                                <source
+                                                    srcset="./Images/portfolio/desk-jpg/img4.jpg 1x, ./Images/portfolio/desk-jpg/img41.jpg 2x"
+                                                    media="(min-width:1200px)">
+                                                <source
+                                                    srcset="./Images/portfolio/tab-webp/img4.webp 1x, ./Images/portfolio/tab-webp/img41.webp 2x"
+                                                    media="(min-width:768px)" type="image/webp">
+                                                <source
+                                                    srcset="./Images/portfolio/tab-jpg/img4.jpg 1x, ./Images/portfolio/tab-jpg/img41.jpg 2x"
+                                                    media="(min-width:768px)">
+                                                <source
+                                                    srcset="./Images/portfolio/mob-webp/img4.webp 1x, ./Images/portfolio/mob-webp/img41.webp 2x"
+                                                    media="(min-width:320px)" type="image/webp">
+                                                <source
+                                                    srcset="./Images/portfolio/mob-jpg/img4.jpg 1x, ./Images/portfolio/mob-jpg/img41.jpg 2x"
+                                                    media="(min-width:320px)">
+                                                <img class="examples-item-picture" src="Images/portfolio/img-3.png" alt="Ноутбук с примером работы" >
+                                            </picture> 
+                                            
                                             <div class="examples-text"><p>Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p></div>
                                         </div>
                                         <div class="card"><h2 class="examples-title">Проект <span lang="en">Prime</span></h2><p class="example-description">Маркетинг</p></div>
@@ -108,7 +188,28 @@
                                 <a class="examples-link" href="#">
                                     <div class="item-one">
                                         <div class="examples-foto">
-                                            <img class="examples-item-picture" src="Images/portfolio/img-4.png" alt="Ноутбук с примером работы" width="370" height="290">
+                                            <picture class="examples-picture">
+                                                <source
+                                                    srcset="./Images/portfolio/desk-webp/img5.webp 1x, ./Images/portfolio/desk-webp/img51.webp 2x"
+                                                    media="(min-width:1200px)" type="image/webp">
+                                                <source
+                                                    srcset="./Images/portfolio/desk-jpg/img5.jpg 1x, ./Images/portfolio/desk-jpg/img51.jpg 2x"
+                                                    media="(min-width:1200px)">
+                                                <source
+                                                    srcset="./Images/portfolio/tab-webp/img5.webp 1x, ./Images/portfolio/tab-webp/img51.webp 2x"
+                                                    media="(min-width:768px)" type="image/webp">
+                                                <source
+                                                    srcset="./Images/portfolio/tab-jpg/img5.jpg 1x, ./Images/portfolio/tab-jpg/img51.jpg 2x"
+                                                    media="(min-width:768px)">
+                                                <source
+                                                    srcset="./Images/portfolio/mob-webp/img5.webp 1x, ./Images/portfolio/mob-webp/img51.webp 2x"
+                                                    media="(min-width:320px)" type="image/webp">
+                                                <source
+                                                    srcset="./Images/portfolio/mob-jpg/img5.jpg 1x, ./Images/portfolio/mob-jpg/img51.jpg 2x"
+                                                    media="(min-width:320px)">
+                                                <img class="examples-item-picture" src="Images/portfolio/img-4.png" alt="Ноутбук с примером работы" >
+                                            </picture> 
+                                            
                                             <div class="examples-text"><p>Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p></div>
                                         </div>
                                         <div class="card"><h2 class="examples-title">Проект <span lang="en">Boxes</span></h2><p class="example-description">Приложение</p></div>
@@ -119,7 +220,28 @@
                                 <a class="examples-link" href="#">
                                     <div class="item-one">
                                         <div class="examples-foto">
-                                            <img class="examples-item-picture" src="Images/portfolio/img-5.png" alt="Ноутбук с примером работы" width="370" height="290">
+                                            <picture class="examples-picture">
+                                                <source
+                                                    srcset="./Images/portfolio/desk-webp/img6.webp 1x, ./Images/portfolio/desk-webp/img61.webp 2x"
+                                                    media="(min-width:1200px)" type="image/webp">
+                                                <source
+                                                    srcset="./Images/portfolio/desk-jpg/img6.jpg 1x, ./Images/portfolio/desk-jpg/img61.jpg 2x"
+                                                    media="(min-width:1200px)">
+                                                <source
+                                                    srcset="./Images/portfolio/tab-webp/img6.webp 1x, ./Images/portfolio/tab-webp/img61.webp 2x"
+                                                    media="(min-width:768px)" type="image/webp">
+                                                <source
+                                                    srcset="./Images/portfolio/tab-jpg/img6.jpg 1x, ./Images/portfolio/tab-jpg/img61.jpg 2x"
+                                                    media="(min-width:768px)">
+                                                <source
+                                                    srcset="./Images/portfolio/mob-webp/img6.webp 1x, ./Images/portfolio/mob-webp/img61.webp 2x"
+                                                    media="(min-width:320px)" type="image/webp">
+                                                <source
+                                                    srcset="./Images/portfolio/mob-jpg/img6.jpg 1x, ./Images/portfolio/mob-jpg/img61.jpg 2x"
+                                                    media="(min-width:320px)">
+                                                <img class="examples-item-picture" src="Images/portfolio/img-5.png" alt="Ноутбук с примером работы" >
+                                            </picture> 
+                                            
                                             <div class="examples-text"><p>Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p></div>
                                         </div>
                                         <div class="card"><h2 class="examples-title" lang="en">Inspiration has no Borders</h2><p class="example-description">Веб-сайт</p></div>
@@ -130,7 +252,28 @@
                                 <a class="examples-link" href="#">
                                     <div class="item-one">
                                         <div class="examples-foto">
-                                            <img class="examples-item-picture" src="Images/portfolio/img-6.png" alt="Ноутбук с примером работы" width="370" height="290">
+                                            <picture class="examples-picture">
+                                                <source
+                                                    srcset="./Images/portfolio/desk-webp/img7.webp 1x, ./Images/portfolio/desk-webp/img71.webp 2x"
+                                                    media="(min-width:1200px)" type="image/webp">
+                                                <source
+                                                    srcset="./Images/portfolio/desk-jpg/img7.jpg 1x, ./Images/portfolio/desk-jpg/img71.jpg 2x"
+                                                    media="(min-width:1200px)">
+                                                <source
+                                                    srcset="./Images/portfolio/tab-webp/img7.webp 1x, ./Images/portfolio/tab-webp/img71.webp 2x"
+                                                    media="(min-width:768px)" type="image/webp">
+                                                <source
+                                                    srcset="./Images/portfolio/tab-jpg/img7.jpg 1x, ./Images/portfolio/tab-jpg/img71.jpg 2x"
+                                                    media="(min-width:768px)">
+                                                <source
+                                                    srcset="./Images/portfolio/mob-webp/img7.webp 1x, ./Images/portfolio/mob-webp/img71.webp 2x"
+                                                    media="(min-width:320px)" type="image/webp">
+                                                <source
+                                                    srcset="./Images/portfolio/mob-jpg/img7.jpg 1x, ./Images/portfolio/mob-jpg/img71.jpg 2x"
+                                                    media="(min-width:320px)">
+                                                <img class="examples-item-picture" src="Images/portfolio/img-6.png" alt="Ноутбук с примером работы" ">
+                                            </picture> 
+                                            
                                             <div class="examples-text"><p>Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p></div>
                                         </div>
                                         <div class="card"><h2 class="examples-title">Издание <span lang="en">Limited Edition</span></h2><p class="example-description">Дизайн</p></div>
@@ -141,7 +284,28 @@
                                 <a class="examples-link" href="#">
                                     <div class="item-one">
                                         <div class="examples-foto">
-                                            <img class="examples-item-picture" src="Images/portfolio/img-7.png" alt="Ноутбук с примером работы" width="370" height="290">
+                                            <picture class="examples-picture">
+                                                <source
+                                                    srcset="./Images/portfolio/desk-webp/img8.webp 1x, ./Images/portfolio/desk-webp/img81.webp 2x"
+                                                    media="(min-width:1200px)" type="image/webp">
+                                                <source
+                                                    srcset="./Images/portfolio/desk-jpg/img8.jpg 1x, ./Images/portfolio/desk-jpg/img81.jpg 2x"
+                                                    media="(min-width:1200px)">
+                                                <source
+                                                    srcset="./Images/portfolio/tab-webp/img8.webp 1x, ./Images/portfolio/tab-webp/img81.webp 2x"
+                                                    media="(min-width:768px)" type="image/webp">
+                                                <source
+                                                    srcset="./Images/portfolio/tab-jpg/img8.jpg 1x, ./Images/portfolio/tab-jpg/img81.jpg 2x"
+                                                    media="(min-width:768px)">
+                                                <source
+                                                    srcset="./Images/portfolio/mob-webp/img8.webp 1x, ./Images/portfolio/mob-webp/img81.webp 2x"
+                                                    media="(min-width:320px)" type="image/webp">
+                                                <source
+                                                    srcset="./Images/portfolio/mob-jpg/img8.jpg 1x, ./Images/portfolio/mob-jpg/img81.jpg 2x"
+                                                    media="(min-width:320px)">
+                                                <img class="examples-item-picture" src="Images/portfolio/img-7.png" alt="Ноутбук с примером работы" >
+                                            </picture> 
+                                            
                                             <div class="examples-text"><p>Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p></div>
                                         </div>
                                         <div class="card"><h2 class="examples-title">Проект <span lang="en">LAB</span></h2><p class="example-description">Маркетинг</p></div>
@@ -152,17 +316,36 @@
                                 <a class="examples-link" href="#">
                                     <div class="item-one">
                                         <div class="examples-foto">
-                                            <img class="examples-item-picture" src="Images/portfolio/img-8.png" alt="Ноутбук с примером работы" width="370" height="290">
+                                            <picture class="examples-picture">
+                                                <source
+                                                    srcset="./Images/portfolio/desk-webp/img9.webp 1x, ./Images/portfolio/desk-webp/img91.webp 2x"
+                                                    media="(min-width:1200px)" type="image/webp">
+                                                <source
+                                                    srcset="./Images/portfolio/desk-jpg/img9.jpg 1x, ./Images/portfolio/desk-jpg/img91.jpg 2x"
+                                                    media="(min-width:1200px)">
+                                                <source
+                                                    srcset="./Images/portfolio/tab-webp/img9.webp 1x, ./Images/portfolio/tab-webp/img91.webp 2x"
+                                                    media="(min-width:768px)" type="image/webp">
+                                                <source
+                                                    srcset="./Images/portfolio/tab-jpg/img9.jpg 1x, ./Images/portfolio/tab-jpg/img91.jpg 2x"
+                                                    media="(min-width:768px)">
+                                                <source
+                                                    srcset="./Images/portfolio/mob-webp/img9.webp 1x, ./Images/portfolio/mob-webp/img91.webp 2x"
+                                                    media="(min-width:320px)" type="image/webp">
+                                                <source
+                                                    srcset="./Images/portfolio/mob-jpg/img9.jpg 1x, ./Images/portfolio/mob-jpg/img91.jpg 2x"
+                                                    media="(min-width:320px)">
+                                                <img class="examples-item-picture" src="Images/portfolio/img-8.png" alt="Ноутбук с примером работы" >
+                                            </picture> 
+                                            
                                             <div class="examples-text"><p>Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p></div>
                                         </div>
                                         <div class="card"><h2 class="examples-title" lang="en">Growing Business</h2><p class="example-description">Приложение</p></div>
                                     </div>
                                 </a>
                             </li>
-                    </div>
                 </ul>
-            </section>
-        
+            </section>    
     </main>
     <footer class="footer">
         <div class="container footer-all">
@@ -179,18 +362,15 @@
                                 <li><a class="mail mail-footer" href="mailto:info@example.com">info@example.com</a></li>
                                 <li><a class="tel tel-footer" href="tel:+380991111111">+38 099 111 11 11</a></li>
                             </ul>
-                        
                     </address>
                 </div>
                 <div class="container-join">
                     <p class="join">присоединяйтесь</p>
                     <ul class="social-list">
-                        <div class="container-social-list">
                             <li class="social-list-item social-list-footer"><a class="social-link social-link-footer" href="#"><svg class="social-icon"><use href="./symbol-defs.svg#icon-instagram-2-1"></use></svg></a></li>
                             <li class="social-list-item social-list-footer"><a class="social-link social-link-footer" href="#"><svg class="social-icon"><use href="./symbol-defs.svg#icon-twitter-1-1"></use></svg></a></li>
                             <li class="social-list-item social-list-footer"><a class="social-link social-link-footer" href="#"><svg class="social-icon"><use href="./symbol-defs.svg#icon-facebook-1-1"></use></svg></a></li>
                             <li class="social-list-item social-list-footer"><a class="social-link social-link-footer" href="#"><svg class="social-icon"><use href="./symbol-defs.svg#icon-linkedin-1-1"></use></svg></a></li>
-                        </div>
                     </ul>
                 </div>
             </div> 

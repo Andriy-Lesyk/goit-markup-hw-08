@@ -1,7 +1,7 @@
 .portfolio-body{
     margin: 0;
 }
-.container-btn-list{
+.btn-list{
 display: flex;
 flex-wrap: wrap;
 padding-bottom: 40px;
@@ -90,7 +90,7 @@ color: $titles-color;
     display: block;
     
 }
-.container-examples-list{
+.examples-list{
     display: flex;
     flex-wrap: wrap;
     padding-bottom: 60px;
@@ -176,9 +176,9 @@ color: $items-color;
 }
 @media screen and (min-width:$tablet){
     
-    .container-btn-list{
+    .btn-list{
         justify-content: center;
-        padding-bottom: 30px;
+        padding-bottom: 40px;
     }
     .examples-item{
         width:354px;
@@ -195,7 +195,7 @@ color: $items-color;
     .examples-item{
         width:370px;   
     }
-    .container-btn-list{
+    .btn-list{
         padding-top: 94px;
         padding-bottom: 50px;
     }
@@ -208,7 +208,7 @@ color: $items-color;
 .examples-item:not(:last-child){
     margin-bottom: 0;   
 }
-.container-examples-list{
+.examples-list{
     padding-bottom: 94px;
 }
 .examples-item:nth-child(-n+6){
