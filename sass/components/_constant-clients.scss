@@ -30,7 +30,7 @@
 
 
 
-.const-item{
+.clients-link{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -39,36 +39,36 @@
     border-radius: 4px;
     flex-basis: calc((100%-60px)/2);
     margin: 15px;
-    &:hover, &:focus{
-        border-color: $accent-color;
-
-    }
+   
 
 }
+.clients-link:focus, .clients-link:hover{
+    border-color:$accent-color ;
+}
 
-.const-item:hover .clients-link,
-.const-item:focus .clients-link{
+.clients-link:hover .const-icon,
+.clients-link:focus .const-icon,{
     fill:$accent-color;
     
 }
 @media screen and (min-width:100px) and (max-width:767px){
-    .const-item:nth-child(-n+2){
+    .clients-link:nth-child(-n+2){
         margin-top: 0;
     }
-    .const-item:nth-child(n+5){
+    .clients-link:nth-child(n+5){
         margin-bottom: 0;
     }
 }
 
 @media screen and (max-width:767px){
-    .const-item:nth-child(odd){
+    .clients-link:nth-child(odd){
         margin-left: 0;
     }
-    .const-item:nth-child(even){
+    .clients-link:nth-child(even){
         margin-right: 0;
     }
   
-    .const-item{
+    .clients-link{
         flex-basis: 210px;
     }
     .container{
@@ -82,19 +82,19 @@
     .container{
         width:$tablet;
     }
-    .const-item{
+    .clients-link{
         flex-basis: 226px;
     }
-    .const-item:nth-child(3n+1){
+    .clients-link:nth-child(3n+1){
         margin-left: 0;
     }
-    .const-item:nth-child(3n+3){
+    .clients-link:nth-child(3n+3){
         margin-right: 0;
     }
-    .const-item:nth-child(-n+3){
+    .clients-link:nth-child(-n+3){
         margin-top: 0;
     }
-    .const-item:nth-child(n+3){
+    .clients-link:nth-child(n+3){
         margin-bottom: 0;
     }
 }
@@ -103,16 +103,16 @@
         width:$desktop;
         
     }    
-    .const-item{
+    .clients-link{
         flex-basis: 170px;
         margin-top: 0;
         margin-bottom: 0;
         
     }
-    .const-item:first-child{  
+    .clients-link:first-child{  
         margin-left: 0;
     }
-    .const-item:last-child{
+    .clients-link:last-child{
         margin-right: 0;
     }
 
