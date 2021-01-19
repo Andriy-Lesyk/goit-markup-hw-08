@@ -48,6 +48,9 @@
 &:hover, &:focus{
     fill: var(--accent-color);
 }
+.modal-btn-close:hover .modal-close-icon, .modal-btn-close:hover .modal-close-icon {
+    fill: var(--accent-color);
+}
 }
 .modal-close-icon{
     display: block;
@@ -204,12 +207,10 @@ color: #757575;
     display: block;
     width: 16px;
     height: 15px;
-    border-radius: 2px ;
-    border: 2px solid #212121;
     margin-right: 7px;
 }
 .checkbox:checked+.checkbox-icon{
-    border-color: transparent;
+    fill: transparent;
     /*background-color: var(--accent-color);*/
     background-image: url(../Images/icon_check.svg);
     background-size: cover;

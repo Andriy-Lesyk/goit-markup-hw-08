@@ -77,9 +77,10 @@ margin-bottom: 16px;
 
 }
 .social-list-item{
-    display: flex;
-    
-   
+    display: flex;      
+}
+.social-list-item:not(:last-child){
+    margin-right: 10px;
 }
 
 .social-link{
